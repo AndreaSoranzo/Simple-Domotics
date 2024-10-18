@@ -1,0 +1,346 @@
+* {
+    letter-spacing: 1px;
+}
+
+/* Custom Widgets */
+
+MainWindow {
+    background-color: -p1;
+}
+
+
+NotificationBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+NotificationBox::hover {
+    background-color: -h4;
+    border-radius: 5px;
+}
+
+NotificationBox#read {
+    background-color: rgb(231, 231, 231);
+}
+
+NotificationBox#read::hover {
+    background-color: -h4;
+}
+
+SensorGridBox {
+    background-color: white;
+    border-radius: 10px;
+}
+
+SensorGridBox::hover {
+    background-color: -h4;
+}
+
+SensorListBox {
+    background-color: white;
+    border-radius: 10px;
+}
+
+SensorListBox::hover {
+    background-color: -h4;
+}
+
+/* Labels */
+
+QLabel {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+QLabel#thin {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+QLabel#title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+QLabel#subtitle {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+QLabel#status {
+    font-size: 12px;
+    color: -p4;
+    font-weight: bold;
+}
+
+QLabel#profile {
+    background-color: -p3;
+    border-radius: 55px;
+}
+
+QLabel#greatings {
+    font-size: 60px;
+    font-weight: 200;
+}
+
+QLabel#phrase {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+QLabel#notification-title {
+    font-weight: bold;
+}
+
+QLabel#notificaion-content {
+    font-size: 16px;
+}
+
+QLabel#header-greatings {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+QLabel#header-phrase {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+QLabel#card-grid-name {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+QLabel#card-grid-tap {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+QLabel#card-grid-type {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QLabel#card-list-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+QLabel#card-list-tap {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+QLabel#card-list-type {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Buttons */
+
+QPushButton#panelBtn {
+    background-color: -p4;
+    border-style: none;
+    border-radius: 20px;
+    font-size: 13px;
+    color: -p1;
+    font-weight: bolder;
+}
+
+QPushButton#panelBtn::hover {
+    background: -h4;
+}
+
+QPushButton#panelBtn::focus {
+    background: -p3;
+    color: -ht;
+}
+
+QPushButton#settings {
+    background-color: -p1;
+    border-style: none;
+    border-radius: 20px;
+}
+
+QPushButton#settings::hover {
+    background-color: -h1;
+}
+
+QPushButton#configBtn {
+    border-style: none;
+    background-color: -p3;
+    border-radius: 20px;
+}
+
+QPushButton#configBtn::hover {
+    background-color: -h3;
+}
+
+QPushButton#rendererBtn {
+    border-style: none;
+    background-color: -p1;
+    border-radius: 8px;
+}
+
+QPushButton#rendererBtn::hover {
+    background-color: -h1;
+}
+
+
+QPushButton#listBtn {
+    border-style: none;
+    background-color: white;
+    border-radius: 4px;
+}
+
+QPushButton#simBtn {
+    font-size: 15px;
+    font-weight: bold;
+    border-style: none;
+    background-color: -p3;
+    border-radius: 4px;
+    color: -ht;
+}
+
+QPushButton#simBtn::hover {
+    background-color: -h3;
+}
+
+QPushButton#okBtn {
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: -p3;
+    border-radius: 10px;
+    color: -ht;
+}
+
+QPushButton#okBtn::hover {
+    background-color: -h3;
+}
+
+QPushButton#editBtn,
+QPushButton#deleteBtn {
+    background-color: -p3;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+/* Widgets */
+
+QWidget#infoView {
+    background-color: -p4;
+    border-radius: 10px;
+}
+
+
+/* QT */
+
+QCheckBox {
+    font-weight: bold;
+}
+
+QTextEdit#moreInfoBox {
+    background-color: -p4;
+    border-radius: 5px;
+    border: 2px solid -p3;
+    padding: 5px;
+}
+
+QLineEdit,
+QComboBox,
+QTextEdit,
+QSpinBox {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid -p1;
+}
+
+QComboBox,
+QSpinBox {
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox::drop-down,
+QSpinBox::up-button,
+QSpinBox::down-button {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: gray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QSpinBox::down-button {
+    subcontrol-position: bottom right;
+}
+
+
+QComboBox::down-arrow,
+QSpinBox::down-arrow {
+    width: 10px;
+    height: 10px;
+    image: url(":assets/icons/arrow_down.svg");
+}
+
+
+QSpinBox::up-arrow {
+    width: 10px;
+    height: 10px;
+    image: url(":assets/icons/arrow_up.svg");
+}
+
+QComboBox::down-arrow:on,
+QSpinBox::up-arrow:on,
+QSpinBox::down-arrow:on {
+    top: 1px;
+    left: 1px;
+}
+
+QWidget#lineSeparator {
+    background-color: -p1;
+    border: 2px solid -p1;
+    border-radius: 1px;
+}
+
+QScrollArea {
+    background-color: transparent;
+}
+
+QScrollArea>QWidget>QWidget {
+    background-color: transparent;
+}
+
+
+QScrollArea>QWidget>QScrollBar:vertical {
+    background-color: -p3;
+    width: 8px;
+    border: 1px transparent #2A2929;
+    border-radius: 4px;
+}
+
+QScrollArea>QWidget>QScrollBar::handle:vertical {
+    background-color: -p2;
+    min-height: 5px;
+    border-radius: 4px;
+}
+
+QScrollArea>QWidget>QScrollBar::add-line:vertical {
+    height: 0px;
+}
+
+QScrollArea>QWidget>QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollArea>QWidget>QScrollBar::add-page:vertical,
+QScrollArea>QWidget>QScrollBar::sub-page:vertical {
+    height: 0px;
+}
